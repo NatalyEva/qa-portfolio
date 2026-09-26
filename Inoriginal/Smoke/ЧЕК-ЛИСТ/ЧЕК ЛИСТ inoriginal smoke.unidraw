@@ -1,0 +1,908 @@
+{
+  "type": "unidraw",
+  "version": 1,
+  "source": "https://unidraw.io",
+  "elements": [
+    {
+      "id": "qd8ATOdXkw7f-EfyF_HNx",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 524.3440476556289,
+        "y": 288.3123133019771
+      },
+      "size": {
+        "width": 388,
+        "height": 52.800000000000004
+      },
+      "version": 2,
+      "versionNonce": 1564525805,
+      "createdAt": 1789194663996,
+      "updatedAt": 1790410528048,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 1,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Чек-лист (Smoke)</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 48,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "S3jgTipUVLoaZFvnrQAqY",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 524.3440474371446,
+        "y": 384.9686460591259
+      },
+      "size": {
+        "width": 112,
+        "height": 15.400000000000002
+      },
+      "version": 2,
+      "versionNonce": 667683939,
+      "createdAt": 1789194663998,
+      "updatedAt": 1790410528048,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 2,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Версия сайта: V1</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 14,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "7jWZ5r2kz6Q0wSiEYTE-E",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 524.3440474371446,
+        "y": 412.2876866980229
+      },
+      "size": {
+        "width": 173,
+        "height": 15.400000000000002
+      },
+      "version": 4,
+      "versionNonce": 746830115,
+      "createdAt": 1789194664000,
+      "updatedAt": 1790410528046,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 3,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Дата создания: 06.09.2026</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 14,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "GQ66F9kHa4elMipuYPJs-",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 524.3440474371446,
+        "y": 357.8305647813318
+      },
+      "size": {
+        "width": 239,
+        "height": 15.400000000000002
+      },
+      "version": 5,
+      "versionNonce": 428482189,
+      "createdAt": 1789194664002,
+      "updatedAt": 1790410528047,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 4,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Сайт заказчика: https://inoriginal.cc/</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 14,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "Lf3ftbx-th4_RhQCvsLv2",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 262,
+        "y": 593
+      },
+      "size": {
+        "width": 68,
+        "height": 22
+      },
+      "version": 49,
+      "versionNonce": 848731331,
+      "createdAt": 1789194876007,
+      "updatedAt": 1790410528047,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 5,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Логика</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "ZTrJXKvOFNaMHWPd-hQUS",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 488,
+        "y": 598
+      },
+      "size": {
+        "width": 165,
+        "height": 22
+      },
+      "version": 17,
+      "versionNonce": 1952198061,
+      "createdAt": 1789194886620,
+      "updatedAt": 1790410528049,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 6,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Каталог фильмов</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "1d-ofqwyUy2bElV-STg5M",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 810,
+        "y": 601
+      },
+      "size": {
+        "width": 122,
+        "height": 22
+      },
+      "version": 132,
+      "versionNonce": 1701194797,
+      "createdAt": 1789194895401,
+      "updatedAt": 1790410528045,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 7,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Видео-плеер</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "mBO3EwkwxhpBRIF8v61C3",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 1056,
+        "y": 512
+      },
+      "size": {
+        "width": 92,
+        "height": 22
+      },
+      "version": 33,
+      "versionNonce": 1971679021,
+      "createdAt": 1789195057596,
+      "updatedAt": 1790410528051,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 8,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Субтитры</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "556Jx6UEq1mM6TNnijYd9",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 1080,
+        "y": 608
+      },
+      "size": {
+        "width": 43,
+        "height": 22
+      },
+      "version": 143,
+      "versionNonce": 759427085,
+      "createdAt": 1789195068081,
+      "updatedAt": 1790410528050,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 9,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Звук</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "NN8xhyKWd5IJlQ36D2f-t",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 1246,
+        "y": 493
+      },
+      "size": {
+        "width": 114,
+        "height": 22
+      },
+      "version": 47,
+      "versionNonce": 180945293,
+      "createdAt": 1789195074298,
+      "updatedAt": 1790410528052,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 10,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Английские</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "cl-PjiiFLHYgOQBU1vRo5",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 1070.25,
+        "y": 700
+      },
+      "size": {
+        "width": 59,
+        "height": 22
+      },
+      "version": 30,
+      "versionNonce": 1287939693,
+      "createdAt": 1789195133763,
+      "updatedAt": 1790410528050,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 12,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Видео</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "VbmIR0VrhSd9oETtwZlYr",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 330,
+        "y": 604
+      },
+      "size": {
+        "width": 158,
+        "height": 5
+      },
+      "version": 28,
+      "versionNonce": 594241987,
+      "createdAt": 1789195142068,
+      "updatedAt": 1790410543277,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 13,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#ffffff",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "Lf3ftbx-th4_RhQCvsLv2",
+          "snappedToEdge": true,
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 330,
+            "y": 604
+          },
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "ZTrJXKvOFNaMHWPd-hQUS",
+          "snappedToEdge": true,
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 488,
+            "y": 609
+          },
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "T4qVAoXTbaVcEG_BYB_fz",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 653,
+        "y": 609
+      },
+      "size": {
+        "width": 157,
+        "height": 3
+      },
+      "version": 30,
+      "versionNonce": 715868141,
+      "createdAt": 1789195144668,
+      "updatedAt": 1790410546301,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 14,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#ffffff",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "ZTrJXKvOFNaMHWPd-hQUS",
+          "snappedToEdge": true,
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 653,
+            "y": 609
+          },
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "1d-ofqwyUy2bElV-STg5M",
+          "snappedToEdge": true,
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 810,
+            "y": 612
+          },
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "mRhyc04NUY_Q1lbCmFS1N",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 932,
+        "y": 612
+      },
+      "size": {
+        "width": 148,
+        "height": 7
+      },
+      "version": 25,
+      "versionNonce": 511654243,
+      "createdAt": 1789195147851,
+      "updatedAt": 1790410549676,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 15,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#ffffff",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "1d-ofqwyUy2bElV-STg5M",
+          "snappedToEdge": true,
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 932,
+            "y": 612
+          },
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "556Jx6UEq1mM6TNnijYd9",
+          "snappedToEdge": true,
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1080,
+            "y": 619
+          },
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "JkQCFNEnflTovMnFfjulh",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 932,
+        "y": 612
+      },
+      "size": {
+        "width": 138.25,
+        "height": 99
+      },
+      "version": 44,
+      "versionNonce": 2000011853,
+      "createdAt": 1789195151084,
+      "updatedAt": 1790410549677,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 16,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#ffffff",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "1d-ofqwyUy2bElV-STg5M",
+          "snappedToEdge": true,
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 932,
+            "y": 612
+          },
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "cl-PjiiFLHYgOQBU1vRo5",
+          "snappedToEdge": true,
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1070.25,
+            "y": 711
+          },
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "UgXvDeLFYdI5K5AkCPlvB",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 932,
+        "y": 523
+      },
+      "size": {
+        "width": 124,
+        "height": 89
+      },
+      "version": 33,
+      "versionNonce": 297276675,
+      "createdAt": 1789195154351,
+      "updatedAt": 1790410549677,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 17,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#ffffff",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "1d-ofqwyUy2bElV-STg5M",
+          "snappedToEdge": true,
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 932,
+            "y": 612
+          },
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "mBO3EwkwxhpBRIF8v61C3",
+          "snappedToEdge": true,
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1056,
+            "y": 523
+          },
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "nAcxh6wSZ1nwMjOrtIF-n",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 1148,
+        "y": 504
+      },
+      "size": {
+        "width": 98,
+        "height": 19
+      },
+      "version": 25,
+      "versionNonce": 1284799651,
+      "createdAt": 1789195157801,
+      "updatedAt": 1790410553661,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 18,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#ffffff",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "mBO3EwkwxhpBRIF8v61C3",
+          "snappedToEdge": true,
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1148,
+            "y": 523
+          },
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "NN8xhyKWd5IJlQ36D2f-t",
+          "snappedToEdge": true,
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1246,
+            "y": 504
+          },
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "H4ZK8LYdazGxBjzgwsjJq",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 1246.25,
+        "y": 544
+      },
+      "size": {
+        "width": 77,
+        "height": 22
+      },
+      "version": 28,
+      "versionNonce": 485311203,
+      "createdAt": 1789370817137,
+      "updatedAt": 1790410528051,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 20,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Русские</p>",
+      "style": {
+        "tc": "#ffffff",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "vfaDVRvlBYwaqgd0p-0jP",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 1148,
+        "y": 523
+      },
+      "size": {
+        "width": 98.25,
+        "height": 32
+      },
+      "version": 25,
+      "versionNonce": 356642989,
+      "createdAt": 1789370829010,
+      "updatedAt": 1790410553661,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 21,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#ffffff",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "mBO3EwkwxhpBRIF8v61C3",
+          "snappedToEdge": true,
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1148,
+            "y": 523
+          },
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "H4ZK8LYdazGxBjzgwsjJq",
+          "snappedToEdge": true,
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1246.25,
+            "y": 555
+          },
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    }
+  ],
+  "files": {}
+}

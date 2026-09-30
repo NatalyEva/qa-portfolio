@@ -1,0 +1,4326 @@
+{
+  "info": {
+    "_postman_id": "16e5299f-6d41-49e7-bdc7-ab9332dfc921",
+    "name": "Pokemon Arena",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56640838",
+    "_collection_link": "https://go.postman.co/collection/56640838-16e5299f-6d41-49e7-bdc7-ab9332dfc921?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "MENTORS",
+      "item": [
+        {
+          "name": "Positive test",
+          "item": [
+            {
+              "name": "Создать ментора",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора латинским алфавитом",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"James\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}"
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Показать список менторов",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Показать ментора по ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors/2",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить своего ментора",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors/11",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors",
+                    "11"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Negative test",
+          "item": [
+            {
+              "name": "Создать ментора без имени, но с аватаром",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора без фото, но с именем",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать второго ментора без удаления предыдущего",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora9\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора с матерным именем",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Сука\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора с именем более 25 символов",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikoraквпывпвыпукпупкуукпупыукпупупуфкпфукнфуе\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора с пробелом в имени",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tik ora\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора с Enter",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \" \",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора, укороченный URL",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}",
+                  "host": [
+                    "{{host}}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора, но выбрать аватарку из другого источника",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"/avatars_pokemons/chikorita.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора GET запрос",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать ментора DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Получить список менторов, не полный URL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}",
+                  "host": [
+                    "{{host}}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Получить список менторов POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Получить список менторов PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Получить список менторов PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Получить список менторов DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Вывести данные ментора, которого нет",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors/12",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors",
+                    "12"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Вывести данные ментора по имени, а не ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors/Чипа_Чапа",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors",
+                    "Чипа_Чапа"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Получить данные на одного ментора POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors/2",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Получить данные на одного ментора PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors/2",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Получить данные на одного ментора PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors/2",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить чужого ментора",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors/9",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить всех менторов",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/mentors",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "mentors"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Create my mentor",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Tikora\",\r\n  \"avatar\": \"/avatars_mentors/Dawn_anime_Journeys.webp\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/mentors",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "mentors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List mentors",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/mentors",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "mentors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "One mentor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/mentors/2",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "mentors",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete my mentor",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/mentors/11",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "mentors",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "POKEMONS",
+      "item": [
+        {
+          "name": "Positive test",
+          "item": [
+            {
+              "name": "PAIRWISE POSITIVE TEST",
+              "item": [
+                {
+                  "name": "2 ур, в покеболе, с нокаутом",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=2&onlyPokeball=true&excludeKnockout=false",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "2"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "true"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "false"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "1 ур, без покебола, с нокаутом",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=1&onlyPokeball=false&excludeKnockout=false",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "1"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "false"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "false"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "3 ур, без покебола, без нокаута",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=3&onlyPokeball=false&excludeKnockout=true",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "3"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "false"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "true"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "5 ур, в покеболе, без нокаута",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=5&onlyPokeball=true&excludeKnockout=true",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "5"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "true"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "true"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "3 ур, в покеболе, с нокаутом",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=3&onlyPokeball=true&excludeKnockout=false",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "3"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "true"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "false"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "4 ур, без покебола, с нокаутом",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=4&onlyPokeball=false&excludeKnockout=false",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "4"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "false"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "false"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "2 ур, без покебола, без нокаута",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=2&onlyPokeball=false&excludeKnockout=true",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "2"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "false"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "true"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "4 ур, с покеболом, без нокаута",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=4&onlyPokeball=true&excludeKnockout=true",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "4"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "true"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "true"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "1 ур, с покеболом, без нокаута",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=1&onlyPokeball=true&excludeKnockout=true",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "1"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "true"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "true"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "5 ур, без покебола, с нокаутом",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{host}}/available-defenders?mentorId=11&level=5&onlyPokeball=false&excludeKnockout=false",
+                      "host": [
+                        "{{host}}"
+                      ],
+                      "path": [
+                        "available-defenders"
+                      ],
+                      "query": [
+                        {
+                          "key": "mentorId",
+                          "value": "11"
+                        },
+                        {
+                          "key": "level",
+                          "value": "5"
+                        },
+                        {
+                          "key": "onlyPokeball",
+                          "value": "false"
+                        },
+                        {
+                          "key": "excludeKnockout",
+                          "value": "false"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Создать покемона атакующего",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Мизантроп\",\r\n  \"avatar\": \"/avatars_pokemons/crobat.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать защитного покемона",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"defense\",\r\n  \"name\": \"Хиликоптер\",\r\n  \"avatar\": \"/avatars_pokemons/combee.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона с латиницей в имени",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Buba\",\r\n  \"avatar\": \"/avatars_pokemons/corsola.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать своего покемона в покебол",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/catch",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "catch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить своего покемона из покебола",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить своего покемона в нокауте",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить своего покемона не в покеболе",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить своего покемона в покеболе",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Посмотреть информацию о покемоне",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/5.1",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "5.1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Отфильтровать список покемонов",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=11&level=1&onlyPokeball=true&excludeKnockout=true",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11"
+                    },
+                    {
+                      "key": "level",
+                      "value": "1"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Сразиться с другим покемоном",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/api/battle",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "api",
+                    "battle"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Negative test",
+          "item": [
+            {
+              "name": "Создать покемона без ментора",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": ,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Гомункул\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона без имени",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона без аватарки",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Ктулх\",\r\n  \"avatar\": \"\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона с именем больше 20 символов",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Аплоывращырущывщращыцшыурывггарвывфв\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона с пробелом в имени",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Абоб ычанский\",\r\n  \"avatar\": \"/avatars_pokemons/dialga.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона с матом в имени",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Сука\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона с Enter",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \" \",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона чужому ментору",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 9,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Гомункул\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона GET запрос",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Гомункул\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Гомункул\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Гомункул\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Гомункул\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Создать покемона, не полный URL",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Гомункул\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}",
+                  "host": [
+                    "{{host}}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать покемона который находится в покеболе",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/catch",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "catch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать покемона в покеболе в нокауте",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/catch",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "catch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать не своего покемона в покебол, который находится в покеболе",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/catch",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "catch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать не своего покемона в покебол, который без покебола",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/catch",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "catch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать покемона в покебол не полный URL",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать покемона в покебол GET запрос",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать покемона в покебол POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/catch",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "catch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать покемона в покебол PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/catch",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "catch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поймать покемона в покебол DELETЕ запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/catch",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "catch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить не своего покемона из покебола",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить покемона из покебола в нокауте",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить не своего покемона из покебола в нокауте",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить покемона из покебола, удаленного покемона",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить покемона не полный URL",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить всех покемонов сервера",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить покемона GET запрос",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить покемона POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить покемона PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выпустить покемона DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}/release",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}",
+                    "release"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить не своего покемона",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить покемона не полный URL",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}",
+                  "host": [
+                    "{{host}}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить всех покемонов сервера",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить покемонов GET запрос",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить покемонов POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить покемонов PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Удалить покемонов PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/{id}",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "{id}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Искать покемона с несуществующим ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/888",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "888"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Искать покемона POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/5.1",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "5.1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Искать покемона PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/5.1",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "5.1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Искать покемона PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/5.1",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "5.1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Искать покемона DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/pokemons/5.1",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "pokemons",
+                    "5.1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Отправить сражаться своего покемона со своим покемоном",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"attackerId\": \"свой\",\r\n  \"defenderId\": \"свой\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/api/battle",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "api",
+                    "battle"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Отправить сражаться чужого покемона с чужим покемоном",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"attackerId\": \"чужой\",\r\n  \"defenderId\": \"чужой\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/api/battle",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "api",
+                    "battle"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Отправить сражаться не своего покемона со своим покемоном",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"attackerId\": \"чужой\",\r\n  \"defenderId\": \"свой\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/api/battle",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "api",
+                    "battle"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Битва GET запросом",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/api/battle",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "api",
+                    "battle"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Битва PUT запросом",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/api/battle",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "api",
+                    "battle"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Битва PATCH запросом",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/api/battle",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "api",
+                    "battle"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Битва DELETE запросом",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/api/battle",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "api",
+                    "battle"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Исключить ID ментора в фильтре",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?level=2&onlyPokeball=true&excludeKnockout=false",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11",
+                      "disabled": true
+                    },
+                    {
+                      "key": "level",
+                      "value": "2"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "false"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Поменять ID ментора на чужого",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=9&level=2&onlyPokeball=true&excludeKnockout=false",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "9"
+                    },
+                    {
+                      "key": "level",
+                      "value": "2"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "false"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Убрать все фильтры",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11",
+                      "disabled": true
+                    },
+                    {
+                      "key": "level",
+                      "value": "2",
+                      "disabled": true
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true",
+                      "disabled": true
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "false",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Убрать фильтр уровня",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=11&onlyPokeball=true&excludeKnockout=false",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11"
+                    },
+                    {
+                      "key": "level",
+                      "value": "2",
+                      "disabled": true
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "false"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Убрать фильтр только в покеболе",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=11&level=2&excludeKnockout=false",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11"
+                    },
+                    {
+                      "key": "level",
+                      "value": "2"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true",
+                      "disabled": true
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "false"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Убрать фильтр исключить нокаут",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=11&level=2&onlyPokeball=true",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11"
+                    },
+                    {
+                      "key": "level",
+                      "value": "2"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "false",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Фильтр POST запросом",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=11&level=1&onlyPokeball=true&excludeKnockout=true",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11"
+                    },
+                    {
+                      "key": "level",
+                      "value": "1"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Фильтр PUT запросом",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=11&level=1&onlyPokeball=true&excludeKnockout=true",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11"
+                    },
+                    {
+                      "key": "level",
+                      "value": "1"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Фильтр PATCH запросом",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=11&level=1&onlyPokeball=true&excludeKnockout=true",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11"
+                    },
+                    {
+                      "key": "level",
+                      "value": "1"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Фильтр DELETE запросом",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/available-defenders?mentorId=11&level=1&onlyPokeball=true&excludeKnockout=true",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "available-defenders"
+                  ],
+                  "query": [
+                    {
+                      "key": "mentorId",
+                      "value": "11"
+                    },
+                    {
+                      "key": "level",
+                      "value": "1"
+                    },
+                    {
+                      "key": "onlyPokeball",
+                      "value": "true"
+                    },
+                    {
+                      "key": "excludeKnockout",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Привысить лимит по созданным покемонам",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Create my pokemon",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"mentorId\": 11,\r\n  \"type\": \"attack\",\r\n  \"name\": \"Гомункул\",\r\n  \"avatar\": \"/avatars_pokemons/geodude.png\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/pokemons",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "pokemons"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Сatch a Pokemon",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/pokemons/{id}/catch",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "pokemons",
+                "{id}",
+                "catch"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Release a Pokemon from a Pokeball",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/pokemons/{id}/release",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "pokemons",
+                "{id}",
+                "release"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete pokemon",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/pokemons/{id}",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "pokemons",
+                "{id}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Pokemon id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/pokemons/5.1",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "pokemons",
+                "5.1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Battle",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"attackerId\": \"0.0\",\r\n  \"defenderId\": \"1.0\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/api/battle",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "api",
+                "battle"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Pokemon battle filter",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/available-defenders?mentorId=11&level=1&onlyPokeball=true&excludeKnockout=true",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "available-defenders"
+              ],
+              "query": [
+                {
+                  "key": "mentorId",
+                  "value": "11"
+                },
+                {
+                  "key": "level",
+                  "value": "1"
+                },
+                {
+                  "key": "onlyPokeball",
+                  "value": "true"
+                },
+                {
+                  "key": "excludeKnockout",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Pokemon filter ADMIN",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/pokemons?mentorld=11&level=1&Available values=pokeball&includeWild=false",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "pokemons"
+              ],
+              "query": [
+                {
+                  "key": "mentorld",
+                  "value": "11"
+                },
+                {
+                  "key": "level",
+                  "value": "1"
+                },
+                {
+                  "key": "Available values",
+                  "value": "pokeball"
+                },
+                {
+                  "key": "includeWild",
+                  "value": "false"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "STATISTICS",
+      "item": [
+        {
+          "name": "Positive test",
+          "item": [
+            {
+              "name": "Посмотреть историю битв",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/battlelog",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "battlelog"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Очистить историю битв",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/battlelog",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "battlelog"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Посмотреть список лидеров",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Negative test",
+          "item": [
+            {
+              "name": "Файт история POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/battlelog",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "battlelog"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Файт история PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/battlelog",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "battlelog"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Файт история PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/battlelog",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "battlelog"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Лидер история POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Лидер история PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Лидер история PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Лидер история DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Fight history",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/battlelog",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "battlelog"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete fight history",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/battlelog",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "battlelog"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Leader board",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/leaderboard",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "leaderboard"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "SETINGS",
+      "item": [
+        {
+          "name": "Positive test",
+          "item": [
+            {
+              "name": "Включить атаку ботов на своего ментора",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"attackMode\": true\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/settings",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "settings"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Выключить атаку ботов на своего ментора",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"attackMode\": false\r\n}"
+                },
+                "url": {
+                  "raw": "{{host}}/settings",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "settings"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Обнулить доску лидеров",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/reset-leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "reset-leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить низкую скорость ботов",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 120\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить среднюю скорость ботов",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 60\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить высокую скорость ботов",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 30\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Показать текущую скорость ботов",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Negative test",
+          "item": [
+            {
+              "name": "Включить атаку ботов GET запрос",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"attackMode\": true\r\n}"
+                },
+                "url": {
+                  "raw": "{{host}}/settings",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "settings"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить атаку ботов POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"attackMode\": true\r\n}"
+                },
+                "url": {
+                  "raw": "{{host}}/settings",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "settings"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить атаку ботов PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"attackMode\": true\r\n}"
+                },
+                "url": {
+                  "raw": "{{host}}/settings",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "settings"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить атаку ботов DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"mentorId\": 11,\r\n  \"attackMode\": true\r\n}"
+                },
+                "url": {
+                  "raw": "{{host}}/settings",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "settings"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Обнулить доску лидеров GET запрос",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/reset-leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "reset-leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Обнулить доску лидеров PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/reset-leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "reset-leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Обнулить доску лидеров PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/reset-leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "reset-leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Обнулить доску лидеров DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/reset-leaderboard",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "reset-leaderboard"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включиь скорость ботов 10",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 10\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить скорость ботов 200",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 200\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить скорость ботов 29",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 29\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить скорость ботов 31",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 31\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить скорость ботов 119",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 119\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Включить скорость ботов 121",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 121\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Изменить скорость ботов GET запрос",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 60\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Изменить скорость ботов PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 30\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Изменить скорость ботов PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 30\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Изменить скорость ботов DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"speed\": 30\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Показать скорость ботов POST запрос",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Показать скорость ботов PUT запрос",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Показать скорость ботов PATCH запрос",
+              "request": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Показать скорость ботов DELETE запрос",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{host}}/bot-speed",
+                  "host": [
+                    "{{host}}"
+                  ],
+                  "path": [
+                    "bot-speed"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Аttack Mode",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"mentorId\": 0,\r\n  \"attackMode\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/settings",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "settings"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reset leader board",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/reset-leaderboard",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "reset-leaderboard"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Bot speed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"speed\": 60\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}/bot-speed",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "bot-speed"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Current speed of bots",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}/bot-speed",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "bot-speed"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "host",
+      "value": ""
+    }
+  ]
+}

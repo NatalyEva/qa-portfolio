@@ -1,0 +1,488 @@
+{
+  "type": "unidraw",
+  "version": 1,
+  "source": "https://unidraw.io",
+  "elements": [
+    {
+      "id": "PQ66ytrYOPUieX8BybESp",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 667.5200653076172,
+        "y": 359.2921889391855
+      },
+      "size": {
+        "width": 388,
+        "height": 52.800000000000004
+      },
+      "version": 8,
+      "versionNonce": 2013706398,
+      "createdAt": 1791102190976,
+      "updatedAt": 1791102998082,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 1,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Чек-лист (Smoke)</p>",
+      "style": {
+        "tc": "#3A3A3A",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 48,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "0d-ACbC9ShV7x4ieUfxaB",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 673.0026742466399,
+        "y": 472.66972978302
+      },
+      "size": {
+        "width": 112,
+        "height": 15.400000000000002
+      },
+      "version": 2,
+      "versionNonce": 1231509890,
+      "createdAt": 1791102190979,
+      "updatedAt": 1791102998083,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 2,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Версия сайта: V2</p>",
+      "style": {
+        "tc": "#3A3A3A",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 14,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "U5-2BofRYqpqSfx10g3b3",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 673.0026742466399,
+        "y": 445.5316485052257
+      },
+      "size": {
+        "width": 238,
+        "height": 15.400000000000002
+      },
+      "version": 2,
+      "versionNonce": 373412830,
+      "createdAt": 1791102190988,
+      "updatedAt": 1791102998083,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 5,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Сайт заказчика: <a href=\"https://verona96.ru/\" rel=\"noopener noreferrer\" target=\"_blank\">https://verona96.ru/</a></p>",
+      "style": {
+        "tc": "#3A3A3A",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 14,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "SH4chE8xTZS50tDwcH-j6",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 411,
+        "y": 663
+      },
+      "size": {
+        "width": 68,
+        "height": 22
+      },
+      "version": 37,
+      "versionNonce": 1328503134,
+      "createdAt": 1791102420553,
+      "updatedAt": 1791102425675,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 6,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Логика</p>",
+      "style": {
+        "tc": "#3A3A3A",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "H5IRsR_s1G1Z4ht6sq5k1",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 567,
+        "y": 663
+      },
+      "size": {
+        "width": 184,
+        "height": 22
+      },
+      "version": 57,
+      "versionNonce": 155228802,
+      "createdAt": 1791102780873,
+      "updatedAt": 1791102787739,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 7,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Выбрать процедуру</p>",
+      "style": {
+        "tc": "#3A3A3A",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "rYat_l5mkCtKuqD9QYmo9",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 479,
+        "y": 674
+      },
+      "size": {
+        "width": 88,
+        "height": 0
+      },
+      "version": 18,
+      "versionNonce": 697470338,
+      "createdAt": 1791102792227,
+      "updatedAt": 1791102794693,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 8,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#3A3A3A",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "SH4chE8xTZS50tDwcH-j6",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 479,
+            "y": 674
+          },
+          "snappedToEdge": true,
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "H5IRsR_s1G1Z4ht6sq5k1",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 567,
+            "y": 674
+          },
+          "snappedToEdge": true,
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "an92WHfmZqb8i9j8QgssQ",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 862,
+        "y": 663
+      },
+      "size": {
+        "width": 167,
+        "height": 22
+      },
+      "version": 57,
+      "versionNonce": 1189274498,
+      "createdAt": 1791102801374,
+      "updatedAt": 1791102808620,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 9,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Оформить заявку</p>",
+      "style": {
+        "tc": "#3A3A3A",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "bR1BofmWUMx4gB5GvEzkb",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 751,
+        "y": 674
+      },
+      "size": {
+        "width": 111,
+        "height": 0
+      },
+      "version": 34,
+      "versionNonce": 892506526,
+      "createdAt": 1791102813794,
+      "updatedAt": 1791102814277,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 10,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#3A3A3A",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "H5IRsR_s1G1Z4ht6sq5k1",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 751,
+            "y": 674
+          },
+          "snappedToEdge": true,
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "an92WHfmZqb8i9j8QgssQ",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 862,
+            "y": 674
+          },
+          "snappedToEdge": true,
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "dpBaFsrVT2j5X7jDUiX-3",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 1140,
+        "y": 663
+      },
+      "size": {
+        "width": 166,
+        "height": 22
+      },
+      "version": 28,
+      "versionNonce": 1611265026,
+      "createdAt": 1791102825077,
+      "updatedAt": 1791102830387,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 11,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Отправить заявку</p>",
+      "style": {
+        "tc": "#3A3A3A",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 20,
+        "ta": "s"
+      }
+    },
+    {
+      "id": "ESPlcI20h4ZBfSvSAo7xX",
+      "type": "line",
+      "schema": 2,
+      "position": {
+        "x": 1029,
+        "y": 674
+      },
+      "size": {
+        "width": 111,
+        "height": 0
+      },
+      "version": 29,
+      "versionNonce": 1914923138,
+      "createdAt": 1791102834410,
+      "updatedAt": 1791102834793,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 12,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "points": [],
+      "style": {
+        "ss": "s",
+        "sc": "#3A3A3A",
+        "sw": 2,
+        "fc": "transparent",
+        "fs": "s",
+        "lst": 0,
+        "let": 2,
+        "lt": "c",
+        "lsc": 1
+      },
+      "tipPoints": {
+        "start": {
+          "boundToId": "an92WHfmZqb8i9j8QgssQ",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1029,
+            "y": 674
+          },
+          "snappedToEdge": true,
+          "normal": {
+            "x": 1,
+            "y": 0
+          }
+        },
+        "end": {
+          "boundToId": "dpBaFsrVT2j5X7jDUiX-3",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          },
+          "absolutePosition": {
+            "x": 1140,
+            "y": 674
+          },
+          "snappedToEdge": true,
+          "normal": {
+            "x": -1,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "KmY_KQr3jZV_7Fwd0n-sm",
+      "type": "text",
+      "schema": 2,
+      "position": {
+        "x": 672.7461013793946,
+        "y": 499.8078110000001
+      },
+      "size": {
+        "width": 173,
+        "height": 15.400000000000002
+      },
+      "version": 29,
+      "versionNonce": 356305950,
+      "createdAt": 1791103030309,
+      "updatedAt": 1791103037328,
+      "createdBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "updatedBy": "06e3b8b6-ab2b-4394-89e1-51a482d733c6",
+      "alpha": 100,
+      "zIndex": 13,
+      "rotation": 0,
+      "groupIds": [],
+      "isLocked": false,
+      "isDeleted": false,
+      "isDTO": true,
+      "text": "<p>Дата создания: 02.08.2026</p>",
+      "style": {
+        "tc": "#3A3A3A",
+        "tff": "Neue Haas Unica, Segoe UI Emoji",
+        "tfs": 14,
+        "ta": "s"
+      }
+    }
+  ],
+  "files": {}
+}
